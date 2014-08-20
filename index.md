@@ -1,0 +1,56 @@
+---
+title       : Miles per Gallon Dataset Explorer
+subtitle    : Not so useful simple app to explore the mtcars dataset
+author      : Mr. Retrofactor :)
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Rationale
+
+- Miles per Gallon Dataset Explorer is an application implemented in the Shiny
+Framework for the purpose of Coursera's Developing Data Products class.
+
+- The application tries to help visualize interactions between variables in the
+  classic `mtcars` dataset.
+
+
+```r
+data(mtcars)
+names(mtcars)
+```
+
+```
+##  [1] "mpg"  "cyl"  "disp" "hp"   "drat" "wt"   "qsec" "vs"   "am"   "gear"
+## [11] "carb"
+```
+
+---
+
+## Features
+
+The application has several _not so useful_ features such as:
+* Ability to choose variables that shall be plot against each other
+* Possibility of choosing the smoothing method that shall be used to fit a curve to the set of data points (lm, glm, loess, etc.)
+* An awesome slider that can be used to define confidence interval for the curve to be fitted
+ 
+
+---
+
+## Availability
+
+- You may find the application at http://retrofactor.shinyapps.io/carsde/
+
+- The source code is as usual at GitHub https://github.com/retrofactor/carsde
+
+
+---
+
+## Questions?
+
+It is always fun to ask for questions at the end of presentation :)
